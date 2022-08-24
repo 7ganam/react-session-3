@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import SimpleUseState from "./components/UseStateDemos/SimpleUseState";
+import BasedOnOldState from "./components/UseStateDemos/BasedOnOldState";
+import StateNoMerge from "./components/UseStateDemos/StateNoMerge";
+import UseEffectExample from "./components/UseEffectDemos/UseEffectExample";
+import Unmount from "./components/UseEffectDemos/Unmount";
+import FetchOnMount from "./components/UseEffectDemos/FetchOnMount";
+import DeeplyNestedTree from "./components/ContextDemo/DeeplyNestedTree";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <SimpleUseState></SimpleUseState>
+      <StateNoMerge></StateNoMerge>
+      {/* <BasedOnOldState></BasedOnOldState> */}
+      {/* <UseEffectExample></UseEffectExample> */}
+      {/* <Unmount></Unmount> */}
+      {/* <FetchOnMount></FetchOnMount> */}
+      <DeeplyNestedTree></DeeplyNestedTree>
     </div>
   );
 }
